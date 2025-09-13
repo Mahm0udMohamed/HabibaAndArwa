@@ -2,7 +2,8 @@ import { GoogleGenAI, Chat } from "@google/genai";
 import { GameMode, Character } from '../types';
 import { SYSTEM_PROMPTS } from '../constants';
 
-const API_KEY = import.meta.env.VITE_GEMINI_API_KEY;
+// ضع مفتاح API الخاص بك هنا
+const API_KEY = "YOUR_GEMINI_API_KEY_HERE";
 
 const ai = new GoogleGenAI({ apiKey: API_KEY });
 
