@@ -163,14 +163,14 @@ const ChatInterface: React.FC<ChatInterfaceProps> = ({ onChatStart, backgroundCl
   }
 
   return (
-    <div className={`flex-1 flex flex-col overflow-hidden transition-colors duration-500`}>
-      <div className="flex-1 overflow-y-auto p-6 space-y-6">
+    <div className={`flex-1 flex flex-col p-4 overflow-hidden ${backgroundClass} transition-colors duration-500`}>
+      <div className="flex-1 overflow-y-auto p-2 space-y-4">
         {messages.map(msg => (
           <ChatMessage key={msg.id} message={msg} activeCharacter={selectedCharacter} />
         ))}
         <div ref={chatEndRef} />
       </div>
-      <div className="shrink-0 p-6 pt-4">
+      <div className="mt-4 shrink-0 px-2 pb-2">
         {renderContent()}
       </div>
     </div>

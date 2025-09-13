@@ -3,7 +3,7 @@ import { GameMode, Character } from '../types';
 import { SYSTEM_PROMPTS } from '../constants';
 
 // ضع مفتاح API الخاص بك هنا
-const API_KEY = "AIzaSyA6es3rj4a59xULMyknNLQEKPfkr4dUJaU";
+const API_KEY = "YOUR_GEMINI_API_KEY_HERE";
 
 const ai = new GoogleGenAI({ apiKey: API_KEY });
 
