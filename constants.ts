@@ -10,10 +10,10 @@ export const MENU_OPTIONS = [
 ];
 
 export const THEMES: Theme[] = [
-    { id: 'default', name: 'افتراضي', style: 'bg-slate-50' },
-    { id: 'sky', name: 'سماء', style: 'bg-gradient-to-br from-sky-50 to-blue-100' },
-    { id: 'sunset', name: 'غروب', style: 'bg-gradient-to-br from-amber-50 to-orange-100' },
-    { id: 'bubbles', name: 'فقاعات', style: 'bg-pattern-bubbles' },
+    { id: 'default', name: 'البنفسجي', style: 'bg-gradient-to-br from-purple-400 to-pink-400' },
+    { id: 'ocean', name: 'المحيط', style: 'bg-gradient-to-br from-blue-400 to-teal-400' },
+    { id: 'sunset', name: 'الغروب', style: 'bg-gradient-to-br from-orange-400 to-red-400' },
+    { id: 'forest', name: 'الغابة', style: 'bg-gradient-to-br from-green-400 to-emerald-400' },
 ];
 
 const getBasePrompt = (character: Character): string => {

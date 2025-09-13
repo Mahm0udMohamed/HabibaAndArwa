@@ -30,7 +30,7 @@ const ChatMessage: React.FC<ChatMessageProps> = ({ message, activeCharacter }) =
     }
 
     return (
-      <div className={`w-10 h-10 ${bgColor} rounded-full flex items-center justify-center text-white font-bold text-lg mr-3 shrink-0`}>
+      <div className={`avatar-circle ${bgColor} mr-4 shrink-0`}>
         {avatarText}
       </div>
     );
@@ -39,7 +39,7 @@ const ChatMessage: React.FC<ChatMessageProps> = ({ message, activeCharacter }) =
   const botAvatarElement = () => {
     if (!activeCharacter) {
       return (
-        <div className="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold text-lg ml-3 shrink-0">
+        <div className="avatar-circle bg-blue-500 ml-4 shrink-0">
           م
         </div>
       );
@@ -64,18 +64,18 @@ const ChatMessage: React.FC<ChatMessageProps> = ({ message, activeCharacter }) =
     }
 
     return (
-      <div className={`w-10 h-10 ${bgColor} rounded-full flex items-center justify-center text-white font-bold text-lg ml-3 shrink-0`}>
+      <div className={`avatar-circle ${bgColor} ml-4 shrink-0`}>
         {avatarText}
       </div>
     );
   }
 
   return (
-    <div className={`flex items-end gap-3 ${isBot ? 'justify-start' : 'justify-end'}`}>
+    <div className={`flex items-end ${isBot ? 'justify-start' : 'justify-end'}`}>
       {isBot && botAvatarElement()}
       <div
-        className={`max-w-[80%] px-4 py-3 whitespace-pre-wrap ${
-          isBot ? 'bg-slate-100 text-slate-800 rounded-r-2xl rounded-bl-2xl' : 'bg-sky-100 text-sky-800 rounded-l-2xl rounded-br-2xl'
+        className={`max-w-[75%] px-6 py-4 whitespace-pre-wrap text-lg leading-relaxed ${
+          isBot ? 'chat-bubble-bot' : 'chat-bubble-user'
         }`}
       >
         {isBot && !message.text ? <LoadingSpinner /> : message.text}
