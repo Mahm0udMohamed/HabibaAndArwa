@@ -2,11 +2,8 @@ import { GoogleGenAI, Chat } from "@google/genai";
 import { GameMode, Character } from '../types';
 import { SYSTEM_PROMPTS } from '../constants';
 
-const API_KEY = process.env.API_KEY;
-
-if (!API_KEY) {
-  throw new Error("API_KEY environment variable not set");
-}
+// ضع مفتاح API الخاص بك هنا
+const API_KEY = "YOUR_GEMINI_API_KEY_HERE";
 
 const ai = new GoogleGenAI({ apiKey: API_KEY });
 
