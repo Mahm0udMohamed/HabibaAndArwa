@@ -39,7 +39,7 @@ const CharacterSelector: React.FC<CharacterSelectorProps> = ({ onSelect }) => {
                     className="p-4 bg-slate-700 border border-slate-600 rounded-xl text-white text-center transition-all duration-200 hover:bg-slate-600 hover:border-blue-400 active:scale-95 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
                 >
                     <div className={`w-12 h-12 ${option.avatarColor} rounded-full flex items-center justify-center text-xl font-bold text-white mx-auto mb-3`}>
-                        {option.name === 'كلاهما' ? 'حأ' : option.name.charAt(0)}
+                        {option.name === 'كلاهما' ? 'ح/أ' : option.name.charAt(0)}
                     </div>
                     <h3 className="text-lg font-bold">{option.name}</h3>
                     <p className="text-xs text-slate-400 mt-1">{option.description}</p>
