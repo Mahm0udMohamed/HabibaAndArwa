@@ -28,21 +28,21 @@ const characterOptions = [
 
 const CharacterSelector: React.FC<CharacterSelectorProps> = ({ onSelect }) => {
   return (
-    <div className="flex flex-col items-center justify-center p-4 h-full animate-fade-in">
-        <h2 className="text-xl font-bold mb-2 text-slate-700 text-center">اختر شخصيتك</h2>
-        <p className="text-slate-500 mb-8 text-center">من ستقود مغامرة اليوم؟</p>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full max-w-lg">
+    <div className="flex flex-col items-center justify-center px-4 py-8 animate-fade-in">
+        <h2 className="text-lg font-bold mb-2 text-slate-800 text-center">اختر شخصيتك</h2>
+        <p className="text-slate-500 mb-6 text-center text-sm">من ستقود مغامرة اليوم؟</p>
+        <div className="grid grid-cols-1 gap-4 w-full max-w-sm">
             {characterOptions.map(option => (
                 <button 
                     key={option.char} 
                     onClick={() => onSelect(option.char)}
-                    className="p-6 bg-white border border-slate-200 rounded-2xl text-slate-700 text-center transition-all duration-300 hover:shadow-xl hover:border-blue-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+                    className="p-4 bg-slate-50 border border-slate-200 rounded-xl text-slate-700 text-center transition-all duration-200 hover:bg-slate-100 hover:border-blue-300 active:scale-95 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
                 >
-                    <div className={`w-16 h-16 ${option.avatarColor} rounded-full flex items-center justify-center text-3xl font-bold text-white mx-auto mb-4`}>
+                    <div className={`w-12 h-12 ${option.avatarColor} rounded-full flex items-center justify-center text-xl font-bold text-white mx-auto mb-3`}>
                         {option.name === 'كلاهما' ? 'حأ' : option.name.charAt(0)}
                     </div>
-                    <h3 className="text-xl font-bold">{option.name}</h3>
-                    <p className="text-sm text-slate-500 mt-1">{option.description}</p>
+                    <h3 className="text-lg font-bold">{option.name}</h3>
+                    <p className="text-xs text-slate-500 mt-1">{option.description}</p>
                 </button>
             ))}
         </div>

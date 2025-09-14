@@ -13,12 +13,12 @@ interface MenuOptionsProps {
 
 const MenuOptions: React.FC<MenuOptionsProps> = ({ onSelect, options }) => {
   return (
-    <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 p-2">
+    <div className="grid grid-cols-2 gap-3">
       {options.map(({ label, mode }) => (
         <button
           key={mode}
           onClick={() => onSelect(mode)}
-          className="p-4 bg-white border border-slate-200 rounded-xl text-slate-700 font-semibold text-center transition-all duration-300 hover:shadow-lg hover:bg-slate-50 hover:border-slate-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+          className="p-4 bg-slate-50 border border-slate-200 rounded-xl text-slate-700 font-medium text-center transition-all duration-200 hover:bg-slate-100 hover:border-blue-300 active:scale-95 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-1 text-sm"
         >
           {label}
         </button>
