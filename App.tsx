@@ -28,7 +28,7 @@ const App: React.FC = () => {
               </button>
             )}
           </div>
-          <h1 className="text-lg font-bold text-white flex-1 text-center truncate">
+          <h1 className="text-lg font-bold text-white flex-1 text-center truncate bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent drop-shadow-sm">
             مغامرات حبيبة وأروي
           </h1>
           <div className="w-16"></div>
