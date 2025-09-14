@@ -24,26 +24,26 @@ const App: React.FC = () => {
   };
 
   return (
-    <div className="h-screen w-screen bg-slate-50 flex flex-col overflow-hidden">
+    <div className="h-full w-full bg-slate-50 flex flex-col overflow-hidden safe-area">
       <div className="flex-1 flex flex-col bg-white">
-        <header className="relative px-4 py-3 shrink-0 border-b border-slate-200 bg-white grid grid-cols-3 items-center shadow-sm">
+        <header className="relative px-4 py-safe-3 pt-safe-top shrink-0 border-b border-slate-200 bg-white grid grid-cols-3 items-center shadow-sm z-10">
           <div className="justify-self-start">
             {isChatActive && (
               <button
                 onClick={handleNewChat}
-                className="px-3 py-1.5 bg-blue-500 text-white rounded-full hover:bg-blue-600 transition-colors text-sm font-medium"
+                className="px-3 py-1.5 bg-blue-500 text-white rounded-full active:bg-blue-600 transition-colors text-sm font-medium touch-manipulation"
               >
                 محادثة جديدة
               </button>
             )}
           </div>
-          <h1 className="text-lg text-center font-bold text-slate-800 justify-self-center">
+          <h1 className="text-lg text-center font-bold text-slate-800 justify-self-center truncate">
             مغامرات حبيبة وأروي
           </h1>
           <div className="relative justify-self-end">
             <button
               onClick={() => setIsThemeSelectorOpen(prev => !prev)}
-              className="p-2 rounded-full hover:bg-slate-100 transition-colors active:bg-slate-200"
+              className="p-2 rounded-full active:bg-slate-200 transition-colors touch-manipulation"
               aria-label="Change theme"
             >
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5 text-slate-600">
