@@ -17,7 +17,7 @@ export const THEMES: Theme[] = [
 ];
 
 const getBasePrompt = (character: Character): string => {
-  const nicknamesHabiba = "بيبة، بوبو، حبوب، الزملكاوية";
+  const nicknamesHabiba = "بيبة، بوبو، حبوب، زملكاوية";
   const nicknamesArwa = "رورو، ريري، روروستا، قمراية";
   const nicknamesBoth = "يا بنات، يا شطار، يا مغامرات";
 
