@@ -194,7 +194,7 @@ const ChatInterface: React.FC<ChatInterfaceProps> = ({ onChatStart }) => {
 
   return (
     <div className="flex-1 flex flex-col overflow-hidden bg-pattern-bubbles min-h-0">
-      <div className="flex-1 overflow-y-auto px-4 py-2 space-y-3 overscroll-contain">
+      <div className="flex-1 overflow-y-auto overflow-x-hidden px-4 py-2 space-y-3 overscroll-contain scroll-smooth">
         {messages.map((msg) => (
           <ChatMessage
             key={msg.id}
