@@ -24,7 +24,7 @@ const ChatMessage: React.FC<ChatMessageProps> = ({ message, activeCharacter }) =
         bgColor = 'bg-amber-500';
         break;
       case Character.Both:
-        avatarText = 'حأ';
+        avatarText = 'ح/أ';
         bgColor = 'bg-teal-500';
         break;
     }
@@ -58,7 +58,7 @@ const ChatMessage: React.FC<ChatMessageProps> = ({ message, activeCharacter }) =
         bgColor = 'bg-amber-500';
         break;
       case Character.Both:
-        avatarText = 'حأ';
+        avatarText = 'ح/أ';
         bgColor = 'bg-teal-500';
         break;
     }
