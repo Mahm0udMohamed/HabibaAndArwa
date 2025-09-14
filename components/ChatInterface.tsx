@@ -9,10 +9,9 @@ import { Chat } from '@google/genai';
 
 interface ChatInterfaceProps {
   onChatStart: () => void;
-  backgroundClass: string;
 }
 
-const ChatInterface: React.FC<ChatInterfaceProps> = ({ onChatStart, backgroundClass }) => {
+const ChatInterface: React.FC<ChatInterfaceProps> = ({ onChatStart }) => {
   const [messages, setMessages] = useState<Message[]>([]);
   const [inputValue, setInputValue] = useState('');
   const [isLoading, setIsLoading] = useState(false);
@@ -163,7 +162,7 @@ const ChatInterface: React.FC<ChatInterfaceProps> = ({ onChatStart, backgroundCl
   }
 
   return (
-    <div className={`flex-1 flex flex-col overflow-hidden ${backgroundClass} transition-colors duration-500 min-h-0`}>
+    <div className="flex-1 flex flex-col overflow-hidden bg-pattern-bubbles min-h-0">
       <div className="flex-1 overflow-y-auto px-4 py-2 space-y-3 overscroll-contain">
         {messages.map(msg => (
           <ChatMessage key={msg.id} message={msg} activeCharacter={selectedCharacter} />
