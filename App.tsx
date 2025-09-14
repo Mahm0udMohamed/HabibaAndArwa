@@ -28,9 +28,11 @@ const App: React.FC = () => {
               </button>
             )}
           </div>
-          <h1 className="text-lg font-bold text-white absolute left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent drop-shadow-sm">
-            مغامرات حبيبة وأروي
-          </h1>
+          <div className="flex-1 flex justify-center">
+            <h1 className="text-lg font-bold text-white bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent drop-shadow-sm">
+              مغامرات حبيبة وأروي
+            </h1>
+          </div>
           <div className="w-20"></div>
         </header>
         <ChatInterface 
