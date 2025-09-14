@@ -193,8 +193,9 @@ const ChatInterface: React.FC<ChatInterfaceProps> = ({ onChatStart }) => {
   };
 
   return (
-    <div className="flex-1 flex flex-col overflow-hidden bg-pattern-bubbles min-h-0">
-      <div className="flex-1 overflow-y-auto overflow-x-hidden px-4 py-2 space-y-3 overscroll-contain scroll-smooth">
+    <div className="flex-1 flex flex-col bg-slate-900 min-h-0">
+      {/* منطقة الرسائل مع التمرير */}
+      <div className="flex-1 overflow-y-auto overflow-x-hidden px-4 py-2 space-y-3 bg-pattern-bubbles" style={{ maxHeight: 'calc(100vh - 140px)' }}>
         {messages.map((msg) => (
           <ChatMessage
             key={msg.id}
@@ -204,6 +205,8 @@ const ChatInterface: React.FC<ChatInterfaceProps> = ({ onChatStart }) => {
         ))}
         <div ref={chatEndRef} />
       </div>
+      
+      {/* منطقة الإدخال ثابتة في الأسفل */}
       <div className="shrink-0 p-4 pb-safe-bottom bg-slate-800 border-t border-slate-700">
         {renderContent()}
       </div>
