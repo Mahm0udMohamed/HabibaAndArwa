@@ -204,10 +204,8 @@ const ChatInterface: React.FC<ChatInterfaceProps> = ({ onChatStart }) => {
         ))}
         <div ref={chatEndRef} />
       </div>
-      <div className="shrink-0 p-4 pb-safe-bottom bg-white border-t border-slate-100">
-        <div className="shrink-0 p-4 pb-safe-bottom bg-slate-800 border-t border-slate-700">
-          {renderContent()}
-        </div>
+      <div className="shrink-0 p-4 pb-safe-bottom bg-slate-800 border-t border-slate-700">
+        {renderContent()}
       </div>
     </div>
   );
