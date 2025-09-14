@@ -145,7 +145,7 @@ const ChatInterface: React.FC<ChatInterfaceProps> = ({ onChatStart }) => {
               value={inputValue}
               onChange={(e) => setInputValue(e.target.value)}
               placeholder={`اكتب رسالتك كـ "${selectedCharacter}"...`}
-              className="flex-1 px-4 py-3 bg-slate-50 border border-slate-200 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 focus:bg-white transition-all duration-200 text-slate-800 placeholder-slate-400 text-sm"
+              className="flex-1 px-4 py-3 bg-slate-700 border border-slate-600 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 focus:bg-slate-600 transition-all duration-200 text-white placeholder-slate-400 text-sm"
               disabled={isLoading}
             />
             <button
@@ -170,6 +170,7 @@ const ChatInterface: React.FC<ChatInterfaceProps> = ({ onChatStart }) => {
         <div ref={chatEndRef} />
       </div>
       <div className="shrink-0 p-4 pb-safe-bottom bg-white border-t border-slate-100">
+      <div className="shrink-0 p-4 pb-safe-bottom bg-slate-800 border-t border-slate-700">
         {renderContent()}
       </div>
     </div>

@@ -15,9 +15,9 @@ const App: React.FC = () => {
   };
 
   return (
-    <div className="h-full w-full bg-slate-50 flex flex-col overflow-hidden safe-area">
-      <div className="flex-1 flex flex-col bg-white">
-        <header className="relative px-4 py-safe-3 pt-safe-top shrink-0 border-b border-slate-200 bg-white flex items-center justify-between shadow-sm z-10">
+    <div className="h-full w-full bg-slate-900 flex flex-col overflow-hidden safe-area">
+      <div className="flex-1 flex flex-col bg-slate-900">
+        <header className="relative px-4 py-safe-3 pt-safe-top shrink-0 border-b border-slate-700 bg-slate-800 flex items-center justify-between shadow-sm z-10">
           <div className="justify-self-start">
             {isChatActive && (
               <button
@@ -28,7 +28,7 @@ const App: React.FC = () => {
               </button>
             )}
           </div>
-          <h1 className="text-lg font-bold text-slate-800 flex-1 text-center truncate">
+          <h1 className="text-lg font-bold text-white flex-1 text-center truncate">
             مغامرات حبيبة وأروي
           </h1>
           <div className="w-16"></div>

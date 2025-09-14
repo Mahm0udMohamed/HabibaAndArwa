@@ -18,7 +18,7 @@ const MenuOptions: React.FC<MenuOptionsProps> = ({ onSelect, options }) => {
         <button
           key={mode}
           onClick={() => onSelect(mode)}
-          className="p-4 bg-slate-50 border border-slate-200 rounded-xl text-slate-700 font-medium text-center transition-all duration-200 hover:bg-slate-100 hover:border-blue-300 active:scale-95 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-1 text-sm"
+          className="p-4 bg-slate-700 border border-slate-600 rounded-xl text-white font-medium text-center transition-all duration-200 hover:bg-slate-600 hover:border-blue-400 active:scale-95 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-1 text-sm"
         >
           {label}
         </button>

@@ -75,7 +75,7 @@ const ChatMessage: React.FC<ChatMessageProps> = ({ message, activeCharacter }) =
       {isBot && botAvatarElement()}
       <div
         className={`max-w-[85%] px-3 py-2 whitespace-pre-wrap text-sm leading-relaxed ${
-          isBot ? 'bg-slate-100 text-slate-800 rounded-r-2xl rounded-bl-2xl rounded-tl-md' : 'bg-blue-500 text-white rounded-l-2xl rounded-br-2xl rounded-tr-md'
+          isBot ? 'bg-slate-700 text-white rounded-r-2xl rounded-bl-2xl rounded-tl-md' : 'bg-blue-500 text-white rounded-l-2xl rounded-br-2xl rounded-tr-md'
         }`}
       >
         {isBot && !message.text ? <LoadingSpinner /> : message.text}
