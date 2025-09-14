@@ -18,7 +18,7 @@ const App: React.FC = () => {
     <div className="h-full w-full bg-slate-900 flex flex-col overflow-hidden safe-area">
       <div className="flex-1 flex flex-col bg-slate-900">
         <header className="relative px-4 py-safe-3 pt-safe-top shrink-0 border-b border-slate-700 bg-slate-800 flex items-center justify-between shadow-sm z-10">
-          <div className="justify-self-start">
+          <div className="w-20 flex justify-start">
             {isChatActive && (
               <button
                 onClick={handleNewChat}
@@ -28,10 +28,10 @@ const App: React.FC = () => {
               </button>
             )}
           </div>
-          <h1 className="text-lg font-bold text-white flex-1 text-center truncate bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent drop-shadow-sm">
+          <h1 className="text-lg font-bold text-white absolute left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent drop-shadow-sm">
             مغامرات حبيبة وأروي
           </h1>
-          <div className="w-16"></div>
+          <div className="w-20"></div>
         </header>
         <ChatInterface 
           key={chatKey} 
