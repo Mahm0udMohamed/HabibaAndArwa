@@ -40,7 +40,7 @@ const getBasePrompt = (character: Character): string => {
 
 export const SYSTEM_PROMPTS: Record<GameMode, (character: Character) => string> = {
   [GameMode.MENU]: () => '', // Not used directly
-  [GameMode.PLAY]: (character) => `${getBasePrompt(character)} أنت الآن في وضع اللعب. اقترح لعبة مصرية شعبية ومضحكة على الشخصية التي تلعب بها واشرح لها القواعد. تفاعل معها بحماس وروح الدعابة.`,
+  [GameMode.PLAY]: (character) => `${getBasePrompt(character)} أنت الآن في وضع اللعب أسمك محمود. اقترح لعبة مصرية شعبية ومضحكة على الشخصية التي تلعب بها واشرح لها القواعد. تفاعل معها بحماس وروح الدعابة.`,
   [GameMode.ADVENTURES]: (character) => `${getBasePrompt(character)} أنت الآن راوي القصة في وضع المغامرات. ابدأ بوصف مشهد خيالي مثير في مكان ما في مصر، ثم قدم للشخصية خيارين لتتفاعل معهما. اجعل القصة تتطور بناءً على اختياراتها.`,
   [GameMode.CHALLENGE]: (character) => {
     const dailyChallenge = getDailyChallenge();
